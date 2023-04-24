@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+:root{
+--bg:#fff;
+--fg:#333;
+
+}
+
+
+
+
+body {font-family:'Figtree', sans-serif; font-size: clamp(10px,1ww,14px);background: rgba(250,243,255,0.8);}
+/*typography*/
+div.rtf{}
+div.rtf p.first{font-size:1.3em; color:#000000;margin-bottom: 1em;padding-left: .5em;margin-top: 2em;}
+div.rtf p.second{font-size: 1em; color:#000000;line-height:1.3em;padding-left: .5em;}
+div.rtf p{font-size:1.4em; line-height: 1.5em;}
+div.rtf h1{font-size:3.5em; line-height: .2em; margin-top:2em; margin-bottom:0.5em;}
+div.rtf h2{font-size: 1em; color:white;line-height:1.5em;position: absolute; top:80%; left:50%;
+	transform: translate(-50%,-50%);padding:0;}
+div.rtf h3{font-size:3em; line-height: 4.5vh;}
+div.rtf h4{font-size:2.3em; line-height: 1.5em; margin-top:4em; margin-bottom:2em;}
+div.rtf hr{line-height: 1em; margin-top:3em; margin-bottom:1em;}
+div.rtf h5{font-size:3em; line-height: 1.5em;margin-bottom: 6vw;}
+/*global style begin*/
+/*header styles*/
+header{position: fixed; top:0; left:0; right:0; display:grid; grid-template-columns: 60px 1fr 1fr; grid-gap:30px;
+background:rgba(50,8,76,0.8); color:#fff;z-index: 10000;}
+header img{width: 30px; margin:1em; align-self: center; justify-content: end;}
+header p{font-size: 1em;align-self: center; justify-self:start;}
+header a.mail{text-decoration:none; align-self:center; justify-self:end; color:#fff; margin:0 20px;}
+
+div.header{max-width: 1200px;margin: 0 auto; text-align: center;
+	padding: 2.5em 5em 5em 5em;color: rgba(32,0,52,0.8);font-weight: bolder;}
+
+	div.header2{max-width: 1200px;margin: 0 auto; text-align: center;background:
+		padding: 6em 5em 5em 5em;color: rgba(32,0,52,0.8);background-size: 90%;font-weight: bolder;}
+
+		div.seethroughblocks{background:rgba(255,0,125,0.5); max-width: 800px;min-height: 100px;padding:20px;margin: 30px;
+			border:10px solid#c03;border-radius: 20px; box-shadow: 0 0 30px rgba(0,0,0,0.5);backdrop-filter:blur(20px);}
+
+		div.chunk{background:rgba(0,0,0,0); padding:40px;min-height:100px;}
+		div.col2{grid-column-start:1; grid-column-end:2;}
+		div.frame{display:grid; grid-template-columns:2fr 1fr; grid-gap:10px; padding:10px;max-width:1550px; margin: 0 auto;grid-row-gap: 50px;}
+		div.box{margin:60px;}
+		div.box img{width: 100%;}
+		div.box div.title{background:rgba(0,0,0,0.7); color:#fff; font-size: 1em; text-align: center; padding: 2em; position: absolute;top:0;left:0;}
+		div.badge{position: absolute; top:0; right:0; background: #ff4; color:#fff; padding: 1em;border-radius: 10px;}
+
+
+
+div.xframe{padding-top: 6em; min-height: 100vh; background-size: 30px;}
+
+div.hero{min-height: 70vh; position: relative;margin-bottom: -2em;}
+img.hero-img{width: 100%;object-fit:cover; margin-top: -8vh;height: 100vh;}
+div.hero-text{position: absolute; top:35%; left:50%; transform: translate(-50%,-50%);
+	padding:0;font-size:6vw;color: white;font-weight: 900;line-height: .9em;}
+div.hero-text h6{
+	padding:0;font-size:6vw;color: white;font-weight: 900;line-height: 9vw;}
+div.hero-txt h6{margin-top: 0;}
+div.hero-text p{
+	padding:0;font-size:2vw;color: white;}
+
+div.hero2{min-height: 70vh; position: relative;margin-bottom: -2em;}
+img.hero-img2{width: 100%;object-fit:cover; margin-top: -5vh;margin-bottom: -70vh;height: 100vh;}
+
+div.text_image{max-width: 1000px; min-width: 500px; margin:0 auto; display:grid; grid-template-columns: 1fr 1fr; grid-gap:20px;min-height: 100vh;}
+div.text_image img{width: 100%; height: 60vh;object-fit: contain;}
+
+
+
+img.content{width: 100%;}
+
+div.cards{max-width: 1200px; margin:0 auto;display:grid; grid-template-columns: repeat(auto-fill,minmax(160px,1fr)); grid-gap:1vw;
+padding:1vw; margin-top: 60px;margin-bottom: 10vh;}
+
+div.cards div.card{}
+	div.cards div.card img{width: 100%;}
+
+
+	div.cards2{max-width: 1200px; margin:0 auto;display:grid; grid-template-columns: repeat(auto-fill,minmax(420px,1fr)); grid-gap:2vw;
+	padding:1vw; margin-top: 0px;margin-bottom: 10vh;}
+
+	div.cards2 div.card2{}
+		div.cards2 div.card2 img{width: 100%;}
+
+
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@media screen and (orientation:portrait){
+  div.text_image{grid-template-columns: 1fr;}
+  div.text_image div.txt{justify-self:start; grid-row-start:1;}
+	div.frame{grid-template-columns: 1fr;}
+}
